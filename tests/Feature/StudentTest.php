@@ -207,7 +207,7 @@ class StudentTest extends TestCase
 
         $this->assertCount(0,Student::all());
 
-        $response->assertRedirect('/students');
+        $response->assertOk();
         
     }
 }
