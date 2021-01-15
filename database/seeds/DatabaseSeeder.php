@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Database\factories\StudentFactory;
 
 class DatabaseSeeder extends Seeder
 {
@@ -10,7 +11,11 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        // $this->call(UsersTableSeeder::class);
-    }
+	{
+	    $this->call([
+
+	        StudentSeeder::class,
+	        
+	    ]);
+	}
 }
